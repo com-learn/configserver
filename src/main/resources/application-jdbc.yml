@@ -14,9 +14,9 @@ spring:
     hikari:
       connectionTimeout: 20000
       maximumPoolSize: 5
-    url: jdbc:postgresql://192.168.31.154:5432/postgres?CONFIG
-    username: postgres
-    password: docker 
+    url: jdbc:postgresql://POSTGRES_URL:5432/postgres?CONFIG
+    username: POSTGRES_USERNAME
+    password: POSTGRES_PWD
 
   jpa:
     show-sql: true
