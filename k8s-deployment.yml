@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: configserver
+  template:
+    metadata:
+      labels:
+        app: configserver
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: configserver
+          image: dockr.jfrog.io/mido-docker/configserver:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082

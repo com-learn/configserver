@@ -76,6 +76,32 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>2.5.0</version>
+		<configuration>
+			<from>
+				<image>dockr.jfrog.io/mido-docker/arm64v8/openjdk:11-jre-slim</image>
+				<auth>
+					<username>midoshkm@gmail.com</username>
+					<password>Jfrog@123</password>
+				</auth>
+			</from>
+                    	<to>
+			    <image>dockr.jfrog.io/mido-docker/configserver:latest</image>
+				<auth>
+					<username>midoshkm@gmail.com</username>
+					<password>Jfrog@123</password>
+				</auth>
+	                </to>
+					  <container>
+    <jvmFlags>
+      <jvmFlag>-Dspring.profiles.active=jdbc</jvmFlag>
+    </jvmFlags>
+	</container>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
