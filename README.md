@@ -7,4 +7,5 @@ Sample Config Server using
   - git ( git profile )
   - local file ( local profile )
  
- 
+ ref-
+  https://github.com/dursunkoc/samplespringbootdbconfigserver
