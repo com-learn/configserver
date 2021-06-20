@@ -1,11 +1,13 @@
 # configserver
 
-Spring Cloud Server Demo
+Spring Cloud Config Server 
 
-Sample Config Server using
-  - jdbc ( jdbc profile )
-  - git ( git profile )
-  - local file ( local profile )
+Completed
+  - jdbc profile ( for loading configuraiton from a db )
+
+In Progress
+  - git ( for loading configuration from git repo )
+  - local file ( for loading configuration from local profile )
  
  ref-
   https://github.com/dursunkoc/samplespringbootdbconfigserver
